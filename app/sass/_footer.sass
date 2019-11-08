@@ -1,0 +1,314 @@
+.footer
+  background: url("../img/footer-bg.png") no-repeat left bottom /  auto 100%
+  text-align: center
+  &__wrap
+    padding: 90px 0 80px
+  &__email
+    padding: 35px 0 10px
+    font-family: 'Gilroy Extra Bold'
+    font-style: normal
+    font-weight: normal
+    a
+      font-size: 46px
+      color: #c63
+      @media only screen and(max-width: 700px)
+        font-size: 32px
+      @media only screen and(max-width: 400px)
+        font-size: 26px
+  &__politics
+    font-size: 36px
+    @media only screen and(max-width: 700px)
+      font-size: 24px
+    @media only screen and(max-width: 400px)
+      font-size: 16px
+    a
+      color: #666
+      border-bottom: 2px solid #666
+
+//=======================MODAL WINDOWS "POLICY" PRESETS=========================
+.policy
+  &__modal
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background: rgba(0, 0, 0, 0.5)
+    z-index: 1050
+    // opacity: 0
+    display: none
+    // -webkit-transition: all 400ms ease-in
+    // -moz-transition: all 400ms ease-in
+    // transition: all 400ms ease-in
+    pointer-events: none
+    // overflow-y: scroll
+    /* при отображении модального окно */
+    &.show
+      // opacity: 1
+      display: block
+      pointer-events: auto
+      overflow-y: auto
+    /* ширина модального окна и его отступы от экрана */
+    &-dialog
+      position: relative
+      width: auto
+      max-width: 980px
+      margin: 50px auto
+      @media only screen and (max-width: 1000px)
+        max-width: 540px
+        margin: 30px auto
+      @media only screen and (max-width: 575px)
+        max-width: 400px
+        margin: 10px auto
+      @media only screen and (max-width: 420px)
+        max-width: 310px
+        margin: 5px auto
+        /* свойства для блока, содержащего контент модального окна */
+    &-content
+      position: relative
+      display: -webkit-box
+      display: -webkit-flex
+      display: -ms-flexbox
+      display: flex
+      -webkit-box-orient: vertical
+      -webkit-box-direction: normal
+      -webkit-flex-direction: column
+      -ms-flex-direction: column
+      flex-direction: column
+      background-color: #fff
+      -webkit-background-clip: padding-box
+      background-clip: padding-box
+      border: 1px solid rgba(0, 0, 0, .2)
+      border-radius: .3rem
+      outline: 0
+      @media only screen and (min-width: 768px)
+        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5)
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5)
+    /* свойства для заголовка модального окна */
+    &-header
+      display: -webkit-box
+      display: -webkit-flex
+      display: -ms-flexbox
+      display: flex
+      -webkit-box-align: center
+      -webkit-align-items: center
+      -ms-flex-align: center
+      align-items: center
+      -webkit-box-pack: justify
+      -webkit-justify-content: space-between
+      -ms-flex-pack: justify
+      justify-content: space-between
+      padding: 15px 30px 0
+      border-bottom: 1px solid #eceeef
+      @media only screen and (max-width: 575px)
+        padding: 10px 10px 0
+    &-title
+      margin-top: 0
+      margin-bottom: 0
+      font-family: 'Gilroy Medium'
+      font-weight: normal
+      font-style: normal
+      line-height: 1.5
+      font-size: 32px
+      @media only screen and (max-width: 1000px)
+        font-size: 24px
+      @media only screen and (max-width: 575px)
+        font-size: 18px
+    /* свойства для кнопки "Закрыть" */
+    &-open
+      float: right
+      font-family: sans-serif
+      font-size: 50px
+      font-family: 'Gilroy Medium'
+      font-weight: normal
+      font-style: normal
+      line-height: 1
+      color: #000
+      text-shadow: 0 1px 0 #fff
+      opacity: .5
+      text-decoration: none
+      @media only screen and (max-width: 1000px)
+        font-size: 35px
+      @media only screen and (max-width: 575px)
+        font-size: 20px
+      /* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+      &:focus, &:hover
+        color: #000
+        text-decoration: none
+        cursor: pointer
+        opacity: .75
+        /* свойства для блока, содержащего основное содержимое окна */
+    &-body
+      position: relative
+      -webkit-box-flex: 1
+      -webkit-flex: 1 1 auto
+      -ms-flex: 1 1 auto
+      flex: 1 1 auto
+      padding: 0 30px
+      overflow: auto
+      @media only screen and (max-width: 1000px)
+        font-size: 16px
+      @media only screen and (max-width: 575px)
+        padding: 0 10px
+        font-size: 12px
+      h4
+        @media only screen and (max-width: 1000px)
+          font-size: 20px
+        @media only screen and (max-width: 575px)
+          font-size: 16px
+      h5
+        @media only screen and (max-width: 1000px)
+          font-size: 18px
+        @media only screen and (max-width: 575px)
+          font-size: 14px
+    &__button
+      display: block
+      margin: 50px auto
+      width: 50%
+      @media only screen and (max-width: 1000px)
+        width: 80%
+        height: 50px
+
+//=======================MODAL WINDOWS "WIDGET" PRESETS END=====================
+.widget
+  &__modal
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background: rgba(0, 0, 0, 0.5)
+    z-index: 1060
+    // opacity: 0
+    display: none
+    // -webkit-transition: all 400ms ease-in
+    // -moz-transition: all 400ms ease-in
+    // transition: all 400ms ease-in
+    pointer-events: none
+    // overflow-y: scroll
+    /* при отображении модального окно */
+    &.show
+      // opacity: 1
+      display: block
+      pointer-events: auto
+      overflow-y: auto
+    /* ширина модального окна и его отступы от экрана */
+    &-dialog
+      position: relative
+      width: auto
+      max-width: 540px
+      margin: 5vh auto
+      @media only screen and (max-width: 775px)
+        max-width: 400px
+      @media only screen and (max-width: 420px)
+        max-width: auto
+        /* свойства для блока, содержащего контент модального окна */
+    &-content
+      position: relative
+      display: -webkit-box
+      display: -webkit-flex
+      display: -ms-flexbox
+      display: flex
+      -webkit-box-orient: vertical
+      -webkit-box-direction: normal
+      -webkit-flex-direction: column
+      -ms-flex-direction: column
+      flex-direction: column
+      background-color: #fff
+      -webkit-background-clip: padding-box
+      background-clip: padding-box
+      border: 1px solid #396
+      border-radius: 1rem
+      outline: 0
+      background: #ebf1f6
+      background: -moz-linear-gradient(-45deg,  #ebf1f6 0%, #abd3ee 50%, #89c3eb 51%, #d5ebfb 100%)
+      background: -webkit-linear-gradient(-45deg,  #ebf1f6 0%,#abd3ee 50%,#89c3eb 51%,#d5ebfb 100%)
+      background: linear-gradient(135deg,  #ebf1f6 0%,#abd3ee 50%,#89c3eb 51%,#d5ebfb 100%)
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#d5ebfb',GradientType=1)
+
+    /* свойства для заголовка модального окна */
+    &-header
+      display: -webkit-box
+      display: -webkit-flex
+      display: -ms-flexbox
+      display: flex
+      -webkit-box-align: center
+      -webkit-align-items: center
+      -ms-flex-align: center
+      align-items: center
+      -webkit-box-pack: justify
+      -webkit-justify-content: space-between
+      -ms-flex-pack: justify
+      justify-content: space-between
+      padding: 15px 30px 0
+      border-bottom: 1px solid #eceeef
+      @media only screen and (max-width: 575px)
+        padding: 10px 10px 0
+    &-title
+      margin-top: 0
+      margin-bottom: 0
+      font-family: 'Gilroy Extra Bold'
+      font-weight: normal
+      font-style: normal
+      line-height: 1.5
+      font-size: 33px
+      display: block
+      margin: 0 auto
+      color: #396
+      @media only screen and (max-width: 1000px)
+        font-size: 28px
+      @media only screen and (max-width: 775px)
+        font-size: 24px
+    /* свойства для кнопки "Закрыть" */
+    &-open
+      float: right
+      font-family: sans-serif
+      font-size: 50px
+      font-family: 'Gilroy Medium'
+      font-weight: normal
+      font-style: normal
+      line-height: 1
+      color: #396
+      text-shadow: 0 1px 0 #fff
+      opacity: .8
+      text-decoration: none
+      @media only screen and (max-width: 1000px)
+        font-size: 35px
+      @media only screen and (max-width: 575px)
+        font-size: 20px
+      /* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+      &:focus, &:hover
+        color: darken(#396, 30%)
+        text-decoration: none
+        cursor: pointer
+        opacity: .75
+        /* свойства для блока, содержащего основное содержимое окна */
+    &-body
+      position: relative
+      -webkit-box-flex: 1
+      -webkit-flex: 1 1 auto
+      -ms-flex: 1 1 auto
+      flex: 1 1 auto
+      padding: 0 30px
+      overflow: auto
+      font-size: 24px
+      @media only screen and (max-width: 1000px)
+        font-size: 20px
+      @media only screen and (max-width: 575px)
+        padding: 0 10px
+        font-size: 16px
+    &-appendix
+      font-family: 'Gilroy Medium'
+      font-style: normal
+      font-weight: normal
+      &__intro
+        color: #396
+        font-style: italic
+      &__desc
+        color: #699
+        display: block
+        padding-left: 30%
+      &__color
+        color: #c63
+        text-decoration: underline
+//======================Modal Windows Settings End================================

@@ -1,0 +1,105 @@
+@import "fonts"
+@import "vars"
+
+*
+  box-sizing: border-box
+
+html, body
+  font-family: 'Gilroy Regular', Arial, Tahoma, sans-serif
+  font-weight: normal
+  font-size: 24px
+  color: #333
+  width: 100%
+  max-width: 100%
+  overflow-x: hidden
+
+
+body, ul, ol
+  margin: 0
+  padding: 0
+
+ul, ol
+  list-style: none
+
+input, textarea
+  outline: none
+  &:active, &:focus
+    outline: none
+
+a
+  transition: all .2s ease-in-out
+  &:link, &:active, &:visited
+    text-decoration: none
+
+img
+  max-width: 100%
+  height: auto
+  display: inline-block
+
+.container
+  max-width: 1440px
+  padding: 0 15px
+  margin: 0 auto
+  // border: 1px solid red
+  @media only screen and(max-width: 1199px)
+    max-width: 1170px
+  @media only screen and(max-width: 991px)
+    max-width: 960px
+  @media only screen and(max-width: 767px)
+    max-width: 730px
+  @media only screen and(max-width: 575px)
+    max-width: 540px
+
+.hidden
+  display: none
+
+.invisible
+  opacity: 0
+
+.visible
+  opacity: 1
+
+.clearfix::after
+  content: ""
+  display: table
+  clear: both
+
+.button
+  display: block
+  margin: 0 auto
+  font-family: 'Gilroy Extra Bold'
+  background: #cc9933
+  background: -moz-linear-gradient(left,  #dda751 0%, #c46b34 100%)
+  background: -webkit-linear-gradient(left,  #dda751 0%,#c46b34 100%)
+  background: linear-gradient(to right,  #dda751 0%,#c46b34 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dda751', endColorstr='#c46b34',GradientType=0)
+  box-shadow: 0 0 20px 20px rgba(196, 107, 52, .1)
+  color: white
+  font-weight: 800
+  font-size: 34px
+  letter-spacing: normal
+  height: 80px
+  border: none
+  outline: none
+  border-radius: 40px
+  cursor: pointer
+  &:active, &:focus
+    border: none
+    outline: none
+  &:hover
+    background: #996633
+    background: -moz-linear-gradient(right,  #dda751 0%, #c46b34 100%)
+    background: -webkit-linear-gradient(right,  #dda751 0%,#c46b34 100%)
+    background: linear-gradient(to left,  #dda751 0%,#c46b34 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dda751', endColorstr='#c46b34',GradientType=0)
+.secondary-title
+  font-family: 'DOCKER One'
+  font-weight: normal
+  font-style: normal
+  font-size: 46px
+  color: #c46b34
+  text-align: center
+  line-height: 55px
+  @media only screen and(max-width: 472px)
+    font-size: 28px
+    line-height: 33px

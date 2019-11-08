@@ -1,0 +1,128 @@
+#preloaders
+  width: 100vw
+  height: 100vh
+  display: block
+  position: fixed
+  background: #fff
+  z-index: 5000
+.preloaders__img
+  display: block
+  position: absolute
+  height: 32px
+  width: 256px
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  margin: auto
+  @media only screen and(max-width: 745px)
+    height: 24px
+    width: 192px
+  @media only screen and(max-width: 400px)
+    height: 16px
+    width: 128px
+.header
+  text-align: center
+  background: url("../img/header-bg.png") no-repeat left top / auto 100%
+  &__wrap
+    padding: 130px 0 80px
+    @media only screen and(max-width: 1300px)
+      padding: 80px 0 80px
+    @media only screen and(max-width: 745px)
+      padding: 30px 0 80px
+
+    // // display: -ms-grid
+    // display: grid
+    // // -ms-grid-columns: 1fr 1fr
+    // grid-template-columns: 55% 45%
+    // // -ms-grid-rows: 245px 310px 1fr
+    // grid-template-rows: 310px 245px 1fr
+    // grid-template-areas: "i1 i2" "i1 i3" "i1 i4"
+  &__img
+    // grid-area: i1
+    float: left
+    @media only screen and(max-width: 1300px)
+      width: 60%
+    @media only screen and(max-width: 1115px)
+      display: block
+      float: none
+      width: 100%
+  &__title
+    width: 39%
+    margin-left: auto
+    float: right
+    // grid-area: i2
+    padding-top: 50px
+    @media only screen and(max-width: 1115px)
+      display: block
+      width: 100%
+      float: none
+    @media only screen and(max-width: 576px)
+      padding-top: 0
+    &__main
+      font-family: 'DOCKER One'
+      font-weight: normal
+      font-style: normal
+      font-size: 82px
+      line-height: 92px
+      color: #e4860f
+      @media only screen and(max-width: 1300px)
+        font-size: 60px
+        line-height: 70px
+      @media only screen and(max-width: 1115px)
+        font-size: 82px
+        line-height: 92px
+      @media only screen and(max-width: 745px)
+        font-size: 60px
+        line-height: 70px
+        margin: 0
+      @media only screen and(max-width: 576px)
+        font-size: 50px
+        line-height: 60px
+      @media only screen and(max-width: 475px)
+        font-size: 36px
+        line-height: 44px
+  &__desc
+    // grid-area: i3
+    width: 45%
+    margin-left: auto
+    @media only screen and(max-width: 1115px)
+      display: block
+      width: 100%
+      margin-left: 0
+      padding: 0 13%
+      @media only screen and(max-width: 576px)
+        padding: 0 2%
+    &__content
+      font-size: 32px
+      padding: 0 0 0 50px
+      @media only screen and(max-width: 1300px)
+        font-size: 30px
+      @media only screen and(max-width: 1115px)
+        font-size: 40px
+        padding: 0
+      @media only screen and(max-width: 795px)
+        font-size: 35px
+      @media only screen and(max-width: 576px)
+        font-size: 30px
+      @media only screen and(max-width: 475px)
+        font-size: 22px
+      @media only screen and(max-width: 375px)
+        font-size: 18px
+    &__color
+      font-family: 'Gilroy Extra Bold'
+      color: #cd7f0b
+  &__controls
+    // grid-area: i4
+  &__button
+    width: 410px
+    @media only screen and(max-width: 1115px)
+      margin-top: 40px
+    @media only screen and(max-width: 475px)
+      display: block
+      width: 80%
+      height: 50px
+      font-size: 22px
+      margin: 20px auto 0
+    @media only screen and(max-width: 360px)
+      width: 90%

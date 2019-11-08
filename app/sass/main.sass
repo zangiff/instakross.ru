@@ -1,0 +1,925 @@
+@import "presets"
+@import "header"
+
+.program
+  &__wrap
+    padding: 80px 0
+    position: relative
+  &__title
+  &__cross
+    display: block
+    position: absolute
+    top: -60px
+    left: 50%
+    width: 405px
+    margin-left: -203px
+    z-index: -1
+    @media only screen and(max-width: 472px)
+      top: -20px
+      width: 300px
+      margin-left: -150px
+    &__text
+      text-transform: uppercase
+      font-family: 'DOCKER One'
+      font-weight: normal
+      font-style: normal
+      font-size: 120px
+      color: #ddd
+      @media only screen and(max-width: 472px)
+        font-size: 80px
+    &__main
+      color: #c56c35 !important
+  &__content
+    &__wrap
+      padding: 20px 0 70px 25px
+      display: -webkit-flex
+      display: -ms-flexbox
+      display: -ms-flex
+      display: flex
+      -webkit-box-pack: justify
+      -ms-flex-pack: justify
+      -webkit-justify-content: space-between
+      justify-content: space-between
+      -webkit-flex-wrap: wrap
+      -ms-flex-wrap: wrap
+      flex-wrap: wrap
+      @media only screen and(max-width: 1420px)
+        -webkit-box-pack: center
+        -ms-flex-pack: center
+        -webkit-justify-content: center
+        justify-content: center
+      @media only screen and(max-width: 1195px)
+        padding: 20px 0 70px
+      @media only screen and(max-width: 1115px)
+        display: block
+      @media only screen and(max-width: 576px)
+        padding: 20px 0 50px
+      // display: ms-grid
+      // display: grid
+      // -ms-grid-rows: auto 50px auto 50px auto
+      // grid-template-rows: auto
+      // -ms-grid-columns: 1fr 50px 1fr 50px 1fr
+      // grid-template-columns: 1fr 1fr 1fr
+      // grid-gap: 50px
+    &__item
+      width: 30%
+      margin-bottom: 60px
+      border: 6px solid #f0bb6b
+      border-radius: 40px
+      padding: 15px 20px 0 0
+      // background: black
+      @media only screen and(max-width: 1420px)
+        width: 40%
+        margin: 0 5% 60px
+      @media only screen and(max-width: 1210px)
+        margin: 0 2% 60px
+      @media only screen and(max-width: 1115px)
+        width: 45%
+        margin: 0 auto 60px
+      @media only screen and(max-width: 999px)
+        width: 50%
+      @media only screen and(max-width: 904px)
+        width: 55%
+      @media only screen and(max-width: 824px)
+        width: 60%
+      @media only screen and(max-width: 777px)
+        width: 65%
+      @media only screen and(max-width: 707px)
+        width: 70%
+      @media only screen and(max-width: 655px)
+        width: 80%
+      @media only screen and(max-width: 538px)
+        width: 90%
+      // @media only screen and(max-width: 518px)
+      //   width: 100%
+      &-1
+        height: 63%
+        @media only screen and(max-width: 1420px)
+          height: 350px
+        @media only screen and(max-width: 472px)
+          height: 340px
+        @media only screen and(max-width: 406px)
+          height: 330px
+      &-2
+        height: 560px
+        @media only screen and(max-width: 1420px)
+          height: 560px
+        @media only screen and(max-width: 472px)
+          height: 560px
+        @media only screen and(max-width: 406px)
+          height: 520px
+        @media only screen and(max-width: 355px)
+          height: 540px
+      &-3
+        height: 80%
+        @media only screen and(max-width: 1420px)
+          height: 425px
+        @media only screen and(max-width: 1347px)
+          height: 455px
+        @media only screen and(max-width: 472px)
+          height: 435px
+        @media only screen and(max-width: 332px)
+          height: 450px
+      &-4
+        @media only screen and(max-width: 1420px)
+          height: 380px
+
+      &-5
+        height: 98%
+        @media only screen and(max-width: 1420px)
+          height: 370px
+        @media only screen and(max-width: 337px)
+          height: 378px
+      &-6
+        height: 80%
+        @media only screen and(max-width: 1420px)
+          height: 305px
+        @media only screen and(max-width: 334px)
+          height: 325px
+      &__wrap
+        background: url("../img/subtle-bg.png")
+        // background: grey
+        background-repeat: repeat
+        margin-left: -25px
+        margin-bottom: -30px
+        border-radius: 40px
+        width: 110%
+        padding-left: 30px
+        padding-bottom: 20px
+        z-index: 2
+        // display: none
+        @media only screen and(max-width: 1420px)
+          width: 100%
+        @media only screen and(max-width: 1195px)
+          padding-left: 15px
+        @media only screen and(max-width: 472px)
+          width: 110%
+        @media only screen and(max-width: 340px)
+          width: 115%
+        &-1
+          @media only screen and(max-width: 575px)
+            height: 110%
+          @media only screen and(max-width: 476px)
+            height: 115%
+        &-2
+          height: 110%
+          @media only screen and(max-width: 472px)
+            height: 105%
+          @media only screen and(max-width: 333px)
+            height: 110%
+        &-3, &-4
+          height: 110%
+        &-5
+          height: 110%
+      &__title
+        font-family: 'DOCKER One'
+        font-weight: normal
+        font-style: normal
+        padding-top: 45px
+        &__class
+          font-size: 34px
+          @media only screen and(max-width: 472px)
+            font-size: 26px
+        &__main
+          color: #c60
+          font-size: 28px
+          margin: 10px 0 15px
+          @media only screen and(max-width: 472px)
+            font-size: 22px
+      &__desc
+        padding-left: 50px
+        &-1
+          background: url("../img/classes-1.png") no-repeat left top
+          padding-top: 2px
+          min-height: 60px
+          padding-left: 40px
+          &-1
+            background-position-y: 5px
+          &-2
+            background-position-y: -50px
+          &-3
+            background-position-y: -100px
+            padding-bottom: 10px
+        &-2
+          background: url("../img/classes-2.png") no-repeat left top
+          padding-top: 1px
+          min-height: 50px
+          &-1
+            background-position-y: 7px
+          &-2
+            background-position-y: -65px
+          &-3
+            background-position-y: -115px
+          &-4
+            background-position-y: -165px
+          &-5
+            background-position-y: -215px
+          &-6
+            background-position-y: -261px
+          &-7
+            background-position-y: -315px
+        &-3
+          background: url("../img/classes-3.png") no-repeat left top
+          padding-top: 1px
+          min-height: 70px
+          &-1
+            background-position-y: 12px
+          &-2
+            background-position-y: -54px
+          &-3
+            background-position-y: -133px
+          &-4
+            background-position-y: -215px
+        &-4
+          background: url("../img/classes-4.png") no-repeat left top
+          padding-top: 1px
+          min-height: 55px
+          &-1
+            background-position-y: 15px
+          &-2
+            background-position-y: -45px
+          &-3
+            background-position-y: -105px
+          &-4
+            background-position-y: -162px
+        &-5
+          background: url("../img/classes-5.png") no-repeat left top
+          padding-top: 1px
+          min-height: 120px
+          &-1
+            background-position-y: 8px
+          &-2
+            background-position-y: -115px
+        &-6
+          background: url("../img/classes-6.png") no-repeat left top
+          padding-top: 1px
+          min-height: 85px
+          &-1
+            background-position-y: 12px
+          &-2
+            background-position-y: -77px
+        &__text
+          margin: 10px 0
+          font-family: 'Gilroy Medium'
+          font-weight: normal
+          font-style: normal
+          font-size: 24px
+          color: #666
+          @media only screen and(max-width: 472px)
+            font-size: 20px
+          @media only screen and(max-width: 406px)
+            font-size: 16px
+  &__offer
+    text-align: center
+    &__price
+      font-family: 'DOCKER One'
+      font-weight: normal
+      font-style: normal
+      font-size: 50px
+      color: #c60
+      margin-bottom: 10px
+      @media only screen and(max-width: 500px)
+        font-size: 35px
+    &__instead
+      font-family: 'Gilroy Medium'
+      font-style: normal
+      font-weight: normal
+      font-size: 40px
+      color: #666
+      text-transform: lowercase
+      margin-top: -8px
+      @media only screen and(max-width: 500px)
+        font-size: 28px
+      &__num
+        color: #cc9933
+        text-decoration: line-through
+  &__controls
+    text-align: center
+    padding: 20px 0
+  &__button
+    width: 460px
+    @media only screen and(max-width: 475px)
+      display: block
+      width: 80%
+      height: 50px
+      font-size: 20px
+      margin: 0 auto
+    @media only screen and(max-width: 360px)
+      width: 90%
+  &__counter
+    text-align: center
+    &__text
+      font-family: 'Gilroy Medium'
+      font-style: normal
+      font-weight: normal
+      font-size: 30px
+      margin: 5px 0
+      text-transform: lowercase
+      letter-spacing: -0.02em
+      @media only screen and(max-width: 500px)
+        font-size: 22px
+    &__color
+      color: #c30
+    &__data
+      margin: 5px 0
+      font-family: 'DOCKER One'
+      font-weight: normal
+      font-style: normal
+      font-size: 46px
+      color: #c30
+      height: 50px
+      @media only screen and(max-width: 500px)
+        font-size: 30px
+        height: 30px
+
+.video
+  // background: url("../img/video-bg.png") no-repeat center left / 122% 122%
+  background: url("../img/subtle-bg.png") repeat
+  &__background
+    width: 100%
+    height: 100%
+    background-image: url("../img/diagonal-border.png")
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+    text-align: center
+    @media only screen and(max-width: 1287px)
+      background-position: center 1%
+      background-size: 100% 85%
+    // @media only screen and(max-width: 999px)
+    //   background-position: center 65%
+    @media only screen and(max-width: 830px)
+      background-position: center 50%
+      background-size: 100% 70%
+    @media only screen and(max-width: 721px)
+      background-position: center 70%
+      background-size: 100% 50%
+    @media only screen and(max-width: 384px)
+      background-position: center 72%
+      background-size: 100% 50%
+  &__wrap
+    padding-top: 100px
+    position: relative
+    @media only screen and(max-width: 1024px)
+      padding-top: 50px
+  &__cross
+    margin: 0 auto
+    position: absolute
+    top: -25px
+    left: 0
+    right: 0
+    opacity: .3
+    @media only screen and(max-width: 1024px)
+      top: -75px
+    @media only screen and(max-width: 472px)
+      top: -30px
+    &__text
+      text-transform: uppercase
+      font-family: 'DOCKER One'
+      font-weight: normal
+      font-style: normal
+      font-size: 120px
+      color: #c63
+      @media only screen and(max-width: 472px)
+        font-size: 80px
+  &__title
+    padding-top: 20px
+    z-index: 3
+    &__action
+      font-family: 'DOCKER One'
+      font-weight: normal
+      font-style: normal
+      font-size: 22px
+      color: #666
+      margin: -25px 0 40px
+      @media only screen and(max-width: 472px)
+        font-size: 16px
+  &__slider
+    position: relative
+    &__poster
+      position: absolute
+      top: 0
+      left: 30%
+      opacity: 0
+  &__play
+    position: absolute
+    top: 0
+    left: 45%
+  &__basket
+    opacity: 1
+    max-width: 1200px
+    max-height: 678px
+    margin: 0 auto
+  &__content
+    outline: none
+    cursor: pointer
+    background: transparent
+    width: 100%
+    &:focus
+      outline: none
+
+.study
+  &__wrap
+    padding-top: 100px
+    position: relative
+  &__title
+  &__cross
+    position: absolute
+    top: -50px
+    left: 50%
+    width: 405px
+    margin-left: -203px
+    z-index: -1
+    @media only screen and(max-width: 472px)
+      top: -5px
+      width: 300px
+      margin-left: -150px
+    &__text
+      text-transform: uppercase
+      font-family: 'DOCKER One'
+      font-weight: normal
+      font-style: normal
+      font-size: 120px
+      color: #ddd
+      @media only screen and(max-width: 472px)
+        font-size: 80px
+    &__main
+  &__svg
+    &__wrap
+      padding: 0 90px 30px 0
+      max-width: 477px
+      max-height: 400px
+      margin: 0 auto
+      @media only screen and(max-width: 775px)
+        margin-bottom: 40px
+      @media only screen and(max-width: 710px)
+        padding: 0 0 30px 0
+        max-width: 367px
+        max-height: 400px
+
+  &__block
+    display: -webkit-flex
+    display: -webkit-box
+    display: -ms-flex
+    display: flex
+    -webkit-box-pack: justify
+    -webkit-justify-content: space-between
+    -ms-flex-pack: justify
+    justify-content: space-between
+    @media only screen and(max-width: 775px)
+      display: block
+      padding: 0 5%
+    // justify-content: center
+    // display: grid
+    // grid-template-columns: 2fr 3fr 2fr
+  &__item
+    &-1
+      width: 25%
+      @media only screen and(max-width: 775px)
+        width: 100%
+        border-left: 4px solid #c96
+        padding-bottom: 60px
+    &-2
+      width: 45%
+      @media only screen and(max-width: 775px)
+        width: 100%
+        border-left: 4px solid #c96
+        padding-bottom: 60px
+    &-3
+      width: 30%
+      @media only screen and(max-width: 775px)
+        width: 100%
+        padding-bottom: 30px
+    &__line
+      width: 50%
+      height: 4px
+      background: #c96
+      @media only screen and(max-width: 775px)
+        display: none
+      &-1
+        margin-left: auto
+      &-2
+        width: 100%
+    &__point
+      &__outer
+        border: 8px solid #c60
+        height: 50px
+        width: 50px
+        border-radius: 50%
+        background: white
+        margin: -27px auto
+        @media only screen and(max-width: 775px)
+          margin: 0 0 0 -25px
+          display: inline-block
+          float: left
+        @media only screen and(max-width: 446px)
+          height: 30px
+          width: 30px
+          border-width: 5px
+          margin-left: -17px
+        &-3
+          @media only screen and(max-width: 446px)
+            margin-left: -13px
+      &__inner
+        height: 20px
+        width: 20px
+        background: #c60
+        border-radius: 50%
+        margin: 7px auto
+        @media only screen and(max-width: 446px)
+          height: 12px
+          width: 12px
+          margin: 4px auto
+    &__content
+      text-align: center
+      padding: 0 20px
+      &__main
+        font-family: 'DOCKER One'
+        font-weight: normal
+        font-style: normal
+        font-size: 32px
+        padding-top: 25px
+        margin-bottom: 10px
+        @media only screen and(max-width: 1324px)
+          font-size: 28px
+        @media only screen and(max-width: 1206px)
+          font-size: 24px
+        @media only screen and(max-width: 1043px)
+          font-size: 20px
+        @media only screen and(max-width: 905px)
+          font-size: 16px
+        @media only screen and(max-width: 775px)
+          font-size: 32px
+          margin: 0 0 10px
+          padding: 10px 0 0 20px
+          text-align: left
+        @media only screen and(max-width: 528px)
+          font-size: 28px
+        @media only screen and(max-width: 446px)
+          font-size: 24px
+        @media only screen and(max-width: 350px)
+          font-size: 20px
+      &__desc
+        font-size: 32px
+        margin: 0
+        line-height: 40px
+        @media only screen and(max-width: 1410px)
+          font-size: 28px
+          line-height: 36px
+        @media only screen and(max-width: 1262px)
+          font-size: 24px
+          line-height: 32px
+        @media only screen and(max-width: 1106px)
+          font-size: 20px
+          line-height: 26px
+        @media only screen and(max-width: 981px)
+          font-size: 16px
+          line-height: 22px
+        @media only screen and(max-width: 775px)
+          font-size: 30px
+          line-height: 38px
+          text-align: left
+          padding-left: 20px
+        @media only screen and(max-width: 528px)
+          font-size: 25px
+          line-height: 33px
+        @media only screen and(max-width: 446px)
+          font-size: 20px
+          line-height: 26px
+        &__color
+          font-family: 'Gilroy Extra Bold'
+          font-weight: normal
+          font-style: normal
+          font-size: 32px
+          color: #c30
+          @media only screen and(max-width: 1410px)
+            font-size: 28px
+            line-height: 36px
+          @media only screen and(max-width: 1262px)
+            font-size: 24px
+            line-height: 32px
+          @media only screen and(max-width: 1106px)
+            font-size: 20px
+            line-height: 26px
+          @media only screen and(max-width: 981px)
+            font-size: 16px
+            line-height: 22px
+          @media only screen and(max-width: 775px)
+            font-size: 30px
+            line-height: 38px
+          @media only screen and(max-width: 528px)
+            font-size: 25px
+            line-height: 33px
+          @media only screen and(max-width: 446px)
+            font-size: 20px
+            line-height: 26px
+  &__offer
+    text-align: center
+    padding-top: 60px
+    &__price
+      font-family: 'DOCKER One'
+      font-weight: normal
+      font-style: normal
+      font-size: 50px
+      color: #c60
+      margin-bottom: 10px
+      @media only screen and(max-width: 500px)
+        font-size: 35px
+    &__instead
+      font-family: 'Gilroy Medium'
+      font-style: normal
+      font-weight: normal
+      font-size: 40px
+      color: #666
+      text-transform: lowercase
+      margin-top: -8px
+      @media only screen and(max-width: 500px)
+        font-size: 28px
+      &__num
+        color: #cc9933
+        text-decoration: line-through
+  &__controls
+    text-align: center
+    padding: 25px 0 30px
+  &__button
+    width: 460px
+    @media only screen and(max-width: 475px)
+      display: block
+      width: 80%
+      height: 50px
+      font-size: 20px
+      margin: 0 auto
+    @media only screen and(max-width: 360px)
+      width: 90%
+  &__counter
+    text-align: center
+    &__text
+      font-family: 'Gilroy Medium'
+      font-style: normal
+      font-weight: normal
+      font-size: 30px
+      margin: 5px 0
+      text-transform: lowercase
+      letter-spacing: -0.02em
+      @media only screen and(max-width: 500px)
+        font-size: 22px
+    &__color
+      color: #c30
+    &__data
+      margin: 5px 0
+      font-family: 'DOCKER One'
+      font-weight: normal
+      font-style: normal
+      font-size: 46px
+      color: #c30
+      height: 50px
+      @media only screen and(max-width: 500px)
+        font-size: 30px
+        height: 30px
+
+.questions
+  background: url("../img/questions-feet-bg.png") no-repeat left top / cover
+  &__wrap
+    background-image: url("../img/question-bg.png")
+    background-repeat: no-repeat
+    background-position: 18% bottom
+    background-size: 38%
+    position: relative
+    @media only screen and(max-width: 1310px)
+      background-size: 43%
+    @media only screen and(max-width: 1115px)
+      background-position: 5% bottom
+      background-size: 50%
+    @media only screen and(max-width: 784px)
+      background-position: left bottom
+      background-size: 58%
+    @media only screen and(max-width: 670px)
+      background-image: url("../img/karina.png")
+      background-repeat: no-repeat
+      background-position: left bottom
+      background-size: 60%
+    @media only screen and(max-width: 630px)
+      background-size: 69%
+    @media only screen and(max-width: 597px)
+      background-size: 71%
+    @media only screen and(max-width: 472px)
+      background-position: left 80%
+      background-size: 60%
+    @media only screen and(max-width: 380px)
+      background-size: 66%
+  &__cross
+    width: 50%
+    position: absolute
+    top: -20px
+    right: -10%
+    opacity: .3
+    @media only screen and(max-width: 1115px)
+      width: 100%
+      left: 31%
+    @media only screen and(max-width: 961px)
+      left: 25%
+    @media only screen and(max-width: 726px)
+      left: 15%
+    @media only screen and(max-width: 580px)
+      left: 10%
+    @media only screen and(max-width: 472px)
+      top: 45px
+      left: 18%
+    @media only screen and(max-width: 377px)
+      left: 13%
+    &__text
+      text-transform: uppercase
+      font-family: 'DOCKER One'
+      font-weight: normal
+      font-style: normal
+      font-size: 120px
+      color: #c63
+      @media only screen and(max-width: 472px)
+        font-size: 70px
+  &__title
+    width: 50%
+    margin-left: auto
+    padding-top: 50px
+    @media only screen and(max-width: 1115px)
+      width: 100%
+    &__main
+      text-align: center
+      padding-top: 80px
+      margin-bottom: 0
+  &__action
+    width: 50%
+    margin-left: auto
+    text-align: center
+    @media only screen and(max-width: 1115px)
+      width: 85%
+    @media only screen and(max-width: 776px)
+      width: 75%
+    @media only screen and(max-width: 676px)
+      width: 70%
+    // @media only screen and(max-width: 472px)
+    //   width: 100%
+    &__main
+      font-family: 'Gilroy Regular'
+      font-style: normal
+      font-weight: normal
+      font-size: 46px
+      line-height: 55px
+      margin: 10px 0
+      @media only screen and(max-width: 472px)
+        font-size: 30px
+        line-height: 38px
+    &__do
+      color: #c63
+      font-family: 'Gilroy Medium'
+      font-style: normal
+      font-weight: normal
+      font-size: 25px
+      margin: 0 0 30px
+      @media only screen and(max-width: 472px)
+        font-size: 16px
+  &__img
+    padding-bottom: 180px
+    @media only screen and(max-width: 472px)
+      margin-left: 35%
+      padding-bottom: 90px
+      width: 80px
+      height: 250px
+
+.feedback
+  text-align: center
+  &__wrap
+    padding-top: 80px
+    position: relative
+  &__cross
+    display: block
+    position: absolute
+    top: -70px
+    left: 50%
+    width: 405px
+    margin-left: -203px
+    z-index: -1
+    @media only screen and(max-width: 472px)
+      top: -25px
+      width: 300px
+      margin-left: -150px
+    &__text
+      text-transform: uppercase
+      font-family: 'DOCKER One'
+      font-weight: normal
+      font-style: normal
+      font-size: 120px
+      color: #ddd
+      @media only screen and(max-width: 472px)
+        font-size: 80px
+  &__slider
+    // overflow: hidden
+    padding: 50px 0 30px
+    @media only screen and(max-width: 773px)
+      padding: 0 0 15px
+    @media only screen and(max-width: 538px)
+      padding: 0
+    &__videowrapper
+      position: relative
+      padding: 20px
+      max-height: 415px
+      img
+        display: block
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        margin: auto
+        height: 80px
+        width: 80px
+        opacity: 0
+        pointer-events: none
+        @media only screen and(max-width: 1115px)
+          height: 60px
+          width: 60px
+        @media only screen and(max-width: 866px)
+          height: 50px
+          width: 50px
+        @media only screen and(max-width: 688px)
+          width: 40px
+          height: 40px
+        @media only screen and(max-width: 500px)
+          width: 30px
+          height: 30px
+    &__wrap
+      width: 100%
+  &__controls
+    text-align: center
+    margin: 100px 0 0 0
+  &__button
+    width: 460px
+    margin-bottom: 90px
+    @media only screen and(max-width: 475px)
+      display: block
+      width: 80%
+      height: 50px
+      font-size: 22px
+      margin: 20px auto 90px
+    @media only screen and(max-width: 360px)
+      width: 90%
+
+.video__feedback
+  height: 100%
+  width: 100%
+
+//===========================Slider Presets====================================
+.slick-dots
+  background: transparent
+  height: 30px
+  @media only screen and(max-width: 472px)
+    height: 0
+  li
+    margin: 0 10px
+    @media only screen and(max-width: 472px)
+      margin: 0 2px
+
+.slick-slide
+  outline: none
+  padding: 55px 0
+  opacity: .5
+  margin-bottom: 25px
+  z-index: 10
+  &>img
+    opacity: 0
+  @media only screen and(max-width: 920px)
+    padding: 25px 0 20px
+  @media only screen and(max-width: 674px)
+    padding: 20px 0 10px
+  @media only screen and(max-width: 472px)
+    padding: 10px 0 0
+    margin-bottom: 0
+
+.slick-slide.slick-center
+  opacity: 1
+  transform: scale(1.25)
+  max-height: 520px
+  z-index: 20
+  &>img
+    opacity: 1
+
+.slick-dots li button:before
+  font-size: 30px
+  @media only screen and(max-width: 920px)
+    font-size: 20px
+  @media only screen and(max-width: 472px)
+    font-size: 14px
+
+.slick-dots li button:hover:before
+  color: #c60
+  opacity: .7
+
+.slick-dots li.slick-active button:before
+  color: #c60
+  opacity: .9
+
+.slick-dots li button:focus:before
+  color: #c60
+  opacity: 1
+//==========================Slider Presets End==================================
+
+@import "footer"
